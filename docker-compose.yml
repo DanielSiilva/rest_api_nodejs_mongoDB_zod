@@ -1,7 +1,7 @@
 version: "3.1"
 
 services:
-  clean-node-api:
+  api-rest-node:
     image: mongo
     container_name: rest-api-nodejs-mongodb
     ports:
