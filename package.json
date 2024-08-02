@@ -1,0 +1,8 @@
+{
+  "name": "rest_api_nodejs_mongoDB_zod",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:DanielSiilva/rest_api_nodejs_mongoDB_zod.git",
+  "author": "DanielSiilva <daniellsousa0614@gmail.com>",
+  "license": "MIT"
+}
