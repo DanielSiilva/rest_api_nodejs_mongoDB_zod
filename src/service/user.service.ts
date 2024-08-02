@@ -2,6 +2,7 @@ import { FilterQuery } from "mongoose";
 import { omit } from "lodash";
 import UserModel, { UserDocument, UserInput } from "../models/user.model";
 
+//Essa camada, tem acesso ao banco de dados
 export async function createUser(input: UserInput) {
   try {
     const user = await UserModel.create(input);
