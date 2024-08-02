@@ -1,12 +1,14 @@
 import express from "express";
 import config from "config";
 import connect from "./utils/connection";
-import log from "./utils/logger";
+import logger from "./utils/logger";
+import routes from "./routes/routes";
 
 const PORT = config.get<number>("port");
 const app = express();
 
 app.listen(PORT, async () => {
-  log.info(`Server running at http://localhost:${PORT}`);
+  logger.info(`Server running at http://localhost:${PORT}`);
   await connect();
+  routes(app);
 });
