@@ -33,3 +33,7 @@ export async function validatePassword({
 
   return omit(user.toJSON(), "password");
 }
+
+export async function findUser(query: FilterQuery<UserDocument>) {
+  return UserModel.findOne(query).lean();
+}
