@@ -2,3 +2,6 @@ node_modules
 doc.txt
 yarn.lock
 .env
+private_key.pem
+private.pem
+public.pem
